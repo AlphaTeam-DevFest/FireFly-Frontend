@@ -1,0 +1,33 @@
+.side-page {
+  position: fixed;
+  top: 0;
+  left: -600px; /* Set the initial position off-screen */
+  width: 600px; /* Set the width of the side page */
+  height: 80%;
+  background-color: white; /* or your desired background color */
+  overflow: hidden;
+  transition: left 0.3s ease;
+  margin-top: 80px;
+  border-radius: 20px;
+  border: black solid 1px;
+}
+
+.side-page.visible {
+  left: 0; /* Move the side page to the left edge of the screen */
+}
+
+.close-button {
+  color: black;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  padding-right: 30px; /* Space for the directional icon */
+}
+
+.close-button:before {
+  content: '←'; /* Unicode arrow character or an image */
+  position: absolute;
+  left: 10px; /* Adjust the position as needed */
+}
